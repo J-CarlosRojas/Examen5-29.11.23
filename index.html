@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/script.js"></script>
+    <title>Examen 3era Unidad</title>
+</head>
+
+<body>
+    <div class="ejercicioUno">
+        <h2>Ejercicio Uno</h2>
+
+        <div class="inputTable_Container">
+
+            <form action="">
+                <label for="filas">filas (1 - 5) </label>
+                <input id="filas" type="range" min="1" max="5">
+
+                <label for="columnas">columnas (1 - 5) </label>
+                <input id="columnas" type="range" min="1" max="5">
+            </form>
+
+            <br>
+
+            <button onclick="crearTabla()">Crear tabla</button>
+
+            <br>
+
+            <div id="tablaContainer"></div>
+
+        </div>
+
+    </div>
+
+    <div class="ejercicioDos">
+        <h2>Ejercicio Cinco</h2>
+
+        <div class="selectorDivisa">
+            <label for="divisa">Elige una divisa</label>
+            <select id="divisa" name="divisa">
+                <option value="Dollar">Dollar</option>
+                <option value="Euro">Euro</option>
+            </select>
+
+        </div>
+
+
+        <br>
+
+        <label for="cantidad">Cantidad a convertir:</label>
+        <input type="number" id="cantidad" placeholder="Ingrese la cantidad">
+      
+        <button onclick="convertirMoneda()">Convertir</button>
+      
+        <p id="resultado"></p>
+
+    </div>
+
+</body>
+
+</html>
